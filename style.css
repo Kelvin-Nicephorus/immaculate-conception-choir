@@ -1,0 +1,2852 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lobster&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lobster&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Tagesschrift&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Roboto;
+    scroll-behavior: smooth;
+}
+
+header, main, footer, .active_nav {
+    max-width: 1950px;
+    margin: 0px auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 888;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    transform: scale(2.5);
+}
+
+.bounce-top {
+	-webkit-animation: bounce-top 2.5s ease-in-out both;
+	        animation: bounce-top 2.5s ease-in-out both;
+}
+
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+            animation-timing-function: ease-out;
+    op-webkit-animation-timing-function: ease-out;
+    acity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+header div {
+    height: 10px;
+    width: 15%;
+    background-color: #2774f1bb;
+    margin-left: 12.5rem;
+    margin-bottom: .5rem;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.dss h2 { 
+    margin-left: 5rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 1.1rem;
+    font-style: normal;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.dss {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dss .snt {
+    font-family: satisfy;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-left: 12.5rem;
+    text-transform: capitalize;
+}
+
+
+ul li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    font-size: .9rem;
+    font-weight: 500;
+    transition: 200ms ease-in-out background-color;
+    position: relative;
+}
+
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+    background-color: #2774f1bb;
+    /* background-color: rgb(127, 147, 249); */
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul a:hover::after{
+    transform: scaleX(1);
+}
+
+li a:hover {
+    color: #2774f1bb;
+}
+
+#blue {
+    background-color: #2774f1bb;
+    padding: 5px 7px;
+    color: white;
+    border-radius: 5px;
+}
+
+#blue:hover {
+    color: rgb(127, 147, 249);
+    background-color: #fff;
+    border: 2px solid rgb(127, 147, 249);
+}
+
+.navbar i {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.scale-up-ver-top {
+	-webkit-animation: scale-up-ver-top 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	 animation: scale-up-ver-top 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+
+
+/* END OF HEADER SECTION  */
+
+/* BEGINNING OF MAIN SECTION  */
+
+/* NAVBAR SCROLL BACKGROUND-COLOR EFFECT / CAROUSEL EFFECT */
+
+.active_nav {
+    background-color: #d9dfe9bb;
+    /* background-color: rgb(194, 205, 246); */
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.carousel-item img {
+   border-radius: 10px; 
+}
+
+/* END OF CAROUSEL SECTION / NAVBAR SCROLL EFFECT  */
+
+
+/* MAIN CONTENT REGION  */
+
+section {
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+
+/* BEGINNING OF NAMES AND TITLES / MARQUEE */
+
+
+.pics {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    animation: fadeInUp 10s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.outer {
+    width: 18%;
+}
+
+.inner {
+    width: 22%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bolder;
+}
+
+.out {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px 5px #000000d7;
+}
+
+.in {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px 5px #000000d7;
+}
+
+
+
+/* END OF NAMES AND TITLES / MARQUEE  */
+
+/* BEGINNING OF EACH CARD  */
+
+.stc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    height: 4rem;
+    background-color: #2774f1bb;
+    /* background-color: rgb(182, 197, 253); */
+    width: 50%;
+    border-radius: 6px;
+}
+
+.center {
+    font-family: "Cal Sans", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+    text-shadow: 4px 4px 6px rgb(0, 0, 0);
+    word-spacing: 4px;
+    letter-spacing: 3px;
+}
+
+.wde {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.3rem;
+    justify-content: center;
+    margin-top: 2.3rem;
+
+}
+
+.perp {
+    perspective: 1000px;
+}
+
+.perp a {
+    cursor: progress;
+}
+
+.all {
+    font-family: pacifico;
+    width: 15vw;
+    height: 48vh;
+    background-color: #fff;
+    border-top:  8px solid #045ef0bb;
+    border-bottom:  6px solid #045ef0bb;
+    box-shadow: 1px 1px 10px #d0cece; 
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.perp:hover .all {
+    transform: rotateY(180deg);
+}
+
+.few {
+    font-family: pacifico;
+    width: 15vw;
+    height: 48vh;
+    background-color: #fff;
+    border-top:  8px solid #045ef0bb;
+    border-bottom:  6px solid #045ef0bb;
+    box-shadow: 1px 1px 10px #d0cece; 
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.perp:hover .few  {
+    transform: rotateY(-180deg);
+}
+
+.more {
+    font-family: pacifico;
+    width: 15vw;
+    height: 48vh;
+    background-color: #fff;
+    border-top:  8px solid #045ef0bb;
+    border-bottom:  6px solid #045ef0bb;
+    box-shadow: 1px 1px 10px #d0cece; 
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.3s;
+}
+
+.perp:hover .more {
+    transform: rotateX(180deg);
+}
+
+.musfrnt, .musbck, .chrfrnt, .chrbck, .iccfrnt, .iccbck {
+    position: absolute;
+    backface-visibility: hidden;
+    height: 31.3rem;
+    width: 20vw;
+}
+
+/* BEGINNING OF FRONT TRANSFORM FLIP EFFECT  */
+
+.musfrnt, .chrfrnt, .iccfrnt {
+    /* width: 10vw; */
+    padding: 1rem;
+    color: #000;
+    transform: rotateY(0deg);
+}
+
+.musfrnt h2, .chrfrnt h2, .iccfrnt h2 {
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: .7rem;
+}
+
+.musfrnt p, .chrfrnt p, .iccfrnt p {
+    font-family: Roboto;
+    font-size: .9rem;
+    font-weight: bold;
+    font-style: normal;
+    width: 100%;
+    line-height: 1.65rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: .7rem;
+}
+
+.musfrnt i, .chrfrnt i, .iccfrnt i {
+    font-size: 2.5rem;
+    color: #045ef0bb;
+    display: flex;
+    justify-content: center;
+    padding-bottom: .8rem;
+}
+
+.musfrnt a, .chrfrnt a, .iccfrnt a {
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    color: rgb(65, 63, 63);
+    font-size: .9rem;
+    font-weight: bolder;
+}
+
+/* END OF FRONT TRANSFORM FLIP EFFECT */
+
+
+/* BEGINNING OF BACK TRANSFORM FLIP EFFECT  */
+
+.musbck, .chrbck {
+    padding: 1rem;
+    height: 31.3rem;
+    background-color: rgb(63,72,80);
+    color: white;
+    transform: rotateY(-180deg);
+    border-bottom:  5px solid #5f97f1bb;
+}
+
+.iccbck {
+    padding: 1rem;
+    height: 31.3rem;
+    background-color: rgb(63,72,80);
+    color: white;
+    transform: rotateX(-180deg);
+    border-top:  5px solid #5f97f1bb;
+}
+
+
+.musbck h2, .chrbck h2, .iccbck h2 {
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: .7rem;
+}
+
+.musbck p, .chrbck p, .iccbck p {
+    font-family: Roboto;
+    font-size: .9rem;
+    font-weight: bold;
+    font-style: normal;
+    width: 100%;
+    line-height: 1.65rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: .7rem;
+}
+
+.musbck i, .chrbck i, .iccbck i {
+    font-size: 2.5rem;
+    color: #045ef0bb;
+    display: flex;
+    justify-content: center;
+    padding-bottom: .8rem;
+}
+
+.musbck a, .chrbck a, .iccbck a {
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    color: #eae7e7;
+    font-size: .9rem;
+    font-weight: bolder;
+}
+
+/* END OF EACH CARD  */
+
+ /* BEGINING OF CECELIA'S SECTION  */
+
+ .clr {
+    padding: 4rem;
+ }
+
+ .clr h2 {
+    font-family: "Tagesschrift", system-ui;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-style: normal;
+ }
+
+ .clearfix {
+    overflow: auto;
+ }
+
+ figure .pin {
+     float: right;
+     width: 45%;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 5px 5px 8px 5px #000000d8;
+ }
+
+
+ .clearfix p {
+    font-weight: bold;
+    font-size: 1.1rem;
+ }
+
+  .clearfix p::first-letter {
+        font-size: 1.5rem;
+     }
+
+ /* END OF CECILIA'S SECTION  */
+
+ /* FOOTER BEGINNING */
+
+ footer {
+    background-image: url('./images/footer\ 4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    max-width: 100%;
+    height: 32rem;
+}
+
+.wisd p {
+   text-align: center;
+   color: #fff;
+   width: 60%;
+   font-weight: 500;
+   padding-bottom: 1rem;
+   padding-top: 3rem;
+   font-size: 1rem;
+}
+
+.wisd {
+   display: flex;
+   justify-content: center;
+}
+
+ .kit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 1.3rem;
+ }
+
+ .kit h6 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: bold;
+ }
+
+ .kit h6 a {
+    color: #dfd9d9da;
+    text-decoration: none;
+    font-size: .9rem;
+ }
+
+.kit h6 a:hover {
+    color: #c4bebe;
+  }
+
+ .fa-solid {
+    font-size: .8rem;
+    padding-left: .5rem;
+ }
+
+
+ .coll {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+ }
+
+ .luk {
+    background-color: #000;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .fa-brands {
+    font-size: 1.1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .fa-brands:hover {
+    color: #c4bebe;
+ }
+
+ .pet {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: .9rem;
+    padding-bottom: 1rem;
+ }
+
+.key ul {
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+}
+
+
+.key a {
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.key a:hover {
+    color: #dfd9d9da;
+}
+
+.sss {
+    border: 1px solid #fff;
+    width: 2px;
+    height: 35px;
+   
+}
+
+/* FOOTER ENDING  */
+
+
+  /* MEDIA QUERY'S SECTION  */
+
+/* LARGER SCREEN RESOLUTION  */
+
+@media (max-width: 1950px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header div {
+        width: 25%;
+        margin-left: 7rem;
+    }
+
+    .dss h2 {
+        font-size: 1.5rem;
+    }
+
+    .dss .snt {
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+        font-weight: bolder;
+        margin-left: 10rem;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2.7rem;
+        padding-left: 5rem;
+    }
+
+    #menu li a {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .active_nav {
+        height: 90px;
+    }
+
+    .pics {
+        display: flex;
+        gap: 5rem;
+    }
+
+    figcaption {
+        margin-top: .5rem;
+        font-size: 1.5rem;
+    }
+
+    .stc {
+        height: 5rem;
+        width: 60%;
+    }
+
+    .out, .in {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px 5px #000000d7;
+    }
+
+    .center {
+        font-size: 3rem;
+    }
+
+    .wde {
+        display: flex;
+        gap: 3rem;
+        width: 100vw;
+        /* margin: 0px auto; */
+    }
+
+    .all, .few, .more {
+        width: 28vw;
+        height: 70vh;
+    }
+
+    .musfrnt h2, .chrfrnt h2, .iccfrnt h2, .musbck h2, .chrbck h2, .iccbck h2 {
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .iccfrnt a, .chrfrnt a, .musfrnt a, .musbck a, .chrbck a, .iccbck a  {
+        font-size: 1.7rem;
+    }
+
+
+     .musfrnt i , .chrfrnt i, .iccfrnt i,  .musbck i, .chrbck i, .iccbck i {
+        font-size: 3rem;
+        padding-top: .8rem;
+    }
+
+     .musfrnt p, .chrfrnt p, .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        font-size: 1.4rem;
+        max-width: 100%;
+        font-weight: 500;
+        line-height: 35px;
+        text-align: justify;
+        padding: .3rem;
+     }
+
+    .chrfrnt, .musfrnt, .iccfrnt {
+        width: 28vw;
+    }
+
+    .musbck, .chrbck, .iccbck {
+        width: 28vw;
+        height: 70vh;
+        color: rgba(255, 255, 255, 0.934);
+        padding: 1rem;
+    }
+   
+    .clr h2 {
+        font-size: 2.5rem;
+    }
+
+    .clearfix p {
+        font-size: 1.5rem;
+    }
+
+    .pin {
+        width: 50%;
+    }
+
+    footer {
+        height: 43rem;
+    }
+
+    .wisd p {
+        font-size: 1.7rem;
+        width: 70%;
+    }
+
+    .kit h6 {
+        font-size: 1.5rem;
+    }
+
+    .kit h6 a {
+        font-size: 1.2rem;
+       
+    }
+
+    .fa-brands {
+        font-size: 2rem;
+    }
+
+    .luk {
+        width: 55px;
+        height: 55px;
+    }
+
+    .pet p {
+        font-size: 1.3rem;
+    }
+
+    .key a {
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media (max-width: 1700px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header div {
+        margin-left: 6rem;
+    }
+
+    .dss h2 {
+        font-size: 1.3rem;
+        margin-left: 3rem;
+    }
+
+    .dss .snt {
+        font-size: 1.5rem;
+        margin-left: 8rem;
+    }
+
+    #menu li a {
+        font-size: 1.1rem;
+    }
+
+    figcaption {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        height: 50rem;
+    }
+        
+    .musfrnt p, .chrfrnt p, .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .musbck, .chrbck, .iccbck {
+        height: 600px;
+    }
+
+}
+
+@media (max-width: 1573px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    figcaption {
+        font-size: 1.1rem;
+    }
+
+     .pics {
+        display: flex;
+        gap: 3.2rem;
+    }
+
+    .musfrnt p, .chrfrnt p, .iccfrnt p,  .musbck p, .chrbck p, .iccbck p  {
+            font-size: 1.1rem;
+            line-height: 30px;
+        }
+
+        .musfrnt a, .chrfrnt a, .iccfrnt a, .musbck a, .chrbck a, .iccbck a {
+            font-size: 1rem;
+        }
+
+        
+    .musbck, .chrbck, .iccbck {
+        height: 550px;
+    }
+
+        .clearfix p {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .pin {
+            width: 40%;
+        }
+
+    nav ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    #menu li a {
+        font-size: 1.1rem;
+    }
+
+
+
+    @media (max-width: 1501px) {
+       body {
+        overflow-x: hidden;
+    }
+
+    figcaption {
+        font-size: 1rem;
+    }
+
+     .pics {
+        display: flex;
+        gap: 3rem;
+    }
+        
+        .musfrnt p, .chrfrnt p, .iccfrnt p,  .musbck p, .chrbck p, .iccbck p  {
+            font-size: 1rem;
+            line-height: 25px;
+            text-align: justify;
+        }
+
+        .musfrnt a, .chrfrnt a, .iccfrnt a, .musbck a, .chrbck a, .iccbck a {
+            font-size: 1.2rem;
+        }
+
+    .musbck, .chrbck, .iccbck {
+        height: 525px;
+    }
+
+        .wisd p {
+            font-size: 1.2rem;
+        }
+
+        .kit h6 {
+            font-size: 1.2rem;
+        }
+
+        .kit h6 a {
+            font-size: 1.1rem;
+        }
+
+        .fa-brands {
+            font-size: 1.7rem;
+        }
+
+        .luk {
+            width: 45px;
+            height: 45px;
+        }
+
+        .pet p {
+            font-size: 1.4rem;
+        }
+
+        footer {
+            height: 40rem;
+        }
+        
+    }
+
+
+}
+
+
+@media (max-width: 1375px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .dss h2 {
+        font-size: 1.1rem;
+    }
+
+    .dss .snt {
+        font-size: .8rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.7rem;
+    }
+
+    #menu li a {
+        font-size: .8rem;
+    }
+
+    .active_nav {
+        height: 75px;
+    }
+
+    figcaption {
+        font-size: .9rem;
+        padding-top: .5rem;
+    }
+
+    .out, .in {
+      border-radius: 5px;
+      border: none;
+      box-shadow: 2px 2px 10px 5px #000000d7;
+    }
+
+     .pics {
+        display: flex;
+        gap: 2.8rem;
+    }
+
+    .center {
+        font-size: 2.5rem;
+    }
+
+    .clearfix h2 {
+        font-size: 1.5rem;
+    }
+
+    .clearfix p {
+        font-size: 1rem;
+    }
+
+    .few, .more, .all {
+        height: 480px;
+    }
+
+    .musbck, .chrbck, .iccbck {
+        height: 480px;
+    }
+
+    .musfrnt p, .chrfrnt p, .iccfrnt p,  .musbck p, .chrbck p, .iccbck p  {
+            font-size: .9rem;
+            text-align: justify;
+        }
+
+         .musfrnt a, .chrfrnt a, .iccfrnt a, .musbck a, .chrbck a, .iccbck a {
+            font-size: 1rem;
+        }
+
+
+    .wisd p {
+        font-size: 1rem;
+    }
+
+    .kit h6 {
+        font-size: 1rem;
+    }
+
+    .kit h6 a {
+        font-size: .9rem;
+    }
+
+    .fa-brands {
+        font-size: 1.2rem;
+    }
+
+    .luk {
+        width: 40px;
+        height: 40px;
+    }
+
+    .pet p {
+        font-size: .8rem;
+    }
+
+    .key a {
+        font-size: .8rem;
+    }
+
+    footer {
+        height: 35rem;
+    }
+}
+
+@media (max-width: 1332px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header div {
+        margin-left: 9rem;
+    }
+    nav ul {
+        display: flex;
+        gap: 1.2rem;
+    }
+
+     .pics {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+   .dss h2 {
+        font-size: 1.1rem;
+    }
+
+    .dss .snt {
+        font-size: 1.2rem;
+        margin-left: 10rem;
+    }
+
+    .active_nav {
+        height: 78px;
+    }
+
+    #menu li a {
+        font-size: 1.2rem;
+    }
+
+    .pet p {
+        font-size: 1.2rem;
+    }
+
+    .clearfix h2 {
+        font-size: 1.5rem;
+    }
+
+    .clearfix p {
+        font-size: 1rem;
+    }
+
+    .pin {
+        width: 38%;
+    }
+
+    .musfrnt p, .chrfrnt p, .iccfrnt p,  .musbck p, .chrbck p, .iccbck p  {
+            line-height: 25px;
+        }
+
+        .musbck, .chrbck, .iccbck {
+            height: 500px;
+        }
+
+
+     .musfrnt h2, .chrfrnt h2, .iccfrnt h2, .musbck h2, .chrbck h2, .iccbck h2 {
+            font-size: 1.1rem;
+        }
+
+        .pet p {
+            font-size: .9rem;
+        }
+
+}
+
+
+
+@media (max-width: 1215px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 1.1rem;
+    }
+
+    .dss h2 {
+        font-size: .9rem;
+        font-weight: bold;
+    }
+
+    #menu li a {
+        font-size: .9rem;
+    }
+
+    .dss .snt {
+        font-size: 1rem;
+        margin-left: 6rem;
+        letter-spacing: 1.5px;
+    }
+
+    .out, .in {
+        border: 5px solid rgb(127, 147, 249);
+    }
+
+    .active_nav {
+        height: 75px;
+    }
+
+    .pics {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .musbck, .chrbck, .iccbck {
+        height: 470px;
+    }
+
+    .musfrnt p, .chrfrnt p, .iccfrnt p,  .musbck p, .chrbck p, .iccbck p {
+        text-align: justify;
+    }
+
+    footer {
+        height: 42rem;
+    }
+
+}
+
+
+
+@media (max-width: 1150px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #menu a {
+        font-size: .9rem;
+    }
+
+     .out, .in {
+        border: 4px solid rgb(127, 147, 249);
+    }
+
+    figcaption {
+        font-size: .8rem;
+    }
+
+    .wde {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .few, .more, .all {
+        width: 30vw;
+        height: 500px;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a {
+        font-size: 1rem;
+    }
+
+    .musfrnt, .chrfrnt , .iccfrnt {
+         width: 30vw;
+    }
+
+     .musfrnt p, .chrfrnt p, .iccfrnt p,  .musbck p, .chrbck p, .iccbck p  {
+            font-size: .8rem;
+            line-height: 20px;
+            text-align: jus;
+        }
+
+        .musbck , .chrbck , .iccbck {
+            height: 490px;
+            width: 30vw;
+        }
+}
+
+
+
+@media (max-width: 1106px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #menu a {
+        font-size: .9em;
+    }
+
+    footer {
+        height: 35rem;
+    }
+
+    .wisd p {
+        font-size: 1rem;
+    }
+
+    .clearfix p {
+        font-size: .9rem;
+    }
+
+    .kit h6 {
+        font-size: 1rem;
+    }
+
+    .kit h6 a {
+        font-size: .8rem;
+    }
+
+    .fa-brands {
+        font-size: 1.2rem;
+    }
+
+    .luk {
+        width: 35px;
+        height: 35px;
+    }
+
+    .pet p {
+        font-size: 1rem;
+    }
+
+    .key a {
+        font-size: 1rem;
+    }
+
+    .musfrnt p, .chrfrnt p, .iccfrnt p,  .musbck p, .chrbck p, .iccbck p  {
+            font-size: .8rem;
+        }
+
+        .few, .more, .all {
+            height: 500px;
+        }
+
+        .musbck , .chrbck , .iccbck {
+            height: 490px;
+        }
+}
+
+@media (max-width: 1087px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+.dss h2 {
+    font-size: 1rem;
+}
+
+    .center {
+        font-size: 2.3rem;
+    }
+
+    .few, .more, .all {
+         height: 430px;
+    }
+
+     .musfrnt, .chrfrnt, .iccfrnt {
+        width: 100%;
+        padding: 0px;
+        
+    }
+
+    .musbck, .chrbck, .iccbck {
+         width: 100%;
+         height: 420px;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        line-height: 22px;
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 1060px) {
+    nav ul {
+        display: flex;
+        gap: .9rem;
+    }
+
+    header div {
+        margin-left: 5rem;
+    }
+
+    .dss .snt {
+        margin-left: 7rem;
+    }
+
+    .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+
+     .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 370px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 360px;
+        padding: .3rem;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        line-height: 21px;
+        font-size: .7rem;
+        text-align: justify;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a,  .musbck a, .chrbck a, .iccbck a {
+        font-size: .8rem;
+    }
+
+
+}
+
+@media (max-width: 1050px) {
+    header div {
+         margin-left: 5rem;
+    }
+
+    nav ul {
+    display: flex;
+    gap: .7rem;
+  }
+
+#menu li a {
+    font-size: .7rem;
+}
+
+.dss h2 {
+    font-size: .9rem;
+    letter-spacing: 3px;
+}
+
+.dss .snt {
+    font-size: 1rem;
+    margin-left: 6rem;
+}
+
+.out, .in {
+        border-radius: 5px;
+        border: none;
+        box-shadow: 2px 2px 10px 5px #000000d7;
+    }
+
+
+.stc {
+    height: 4rem;
+}
+
+.pet p {
+    font-size: .8rem;
+}
+
+.musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+
+      .pics {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+     .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 400px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 390px;
+        padding: .3rem;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        line-height: 21px;
+        font-size: .8rem;
+        text-align: justify;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a,  .musbck a, .chrbck a, .iccbck a {
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    header div {
+        margin-left: 5rem;
+    }
+
+    .dss h2 {
+        margin-left: 2rem;
+    }
+
+     .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+
+      .pics {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+     .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 370px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 360px;
+        padding: .3rem;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        line-height: 22px;
+        font-size: .7rem;
+        text-align: justify;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a,  .musbck a, .chrbck a, .iccbck a {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 950px) {
+    nav ul {
+        display: flex;
+        gap: .6rem;
+        margin-right: 2rem;
+    }
+
+    header nav h2 {
+        font-size: .9rem;
+    }
+
+    .wisd p {
+        font-size: .8rem;
+    }
+
+    .kit h6 {
+        font-size: .8rem;
+    }
+
+    .kit h6 a {
+        font-size: .7rem;
+    }
+
+     .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+
+     .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 350px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 340px;
+        padding: .3rem;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        line-height: 18px;
+        font-size: .7rem;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a,  .musbck a, .chrbck a, .iccbck a {
+        font-size: .8rem;
+    }
+
+        figcaption {
+            font-size: .7rem;
+        }
+
+}
+
+@media (max-width: 930px) {
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    header div {
+        margin-left: 4rem;
+    }
+
+    header nav h2 {
+        margin-left: 2rem;
+    }
+
+    .snt {
+        margin-left: 5rem;
+    }
+    
+    #menu a {
+       font-size: .8rem;
+   }
+
+    .active_nav {
+        height: 63px;
+    }
+
+    .pet p {
+        font-size: .7rem;
+    }
+
+    .key a {
+            font-size: .8rem;
+        }
+
+     .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+
+     .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 350px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 340px;
+        padding: .3rem;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        line-height: 18px;
+        text-align: justify;
+        font-size: .7rem;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a,  .musbck a, .chrbck a, .iccbck a {
+        font-size: .8rem;
+    }
+
+    footer {
+            height: 32rem;
+        }
+}
+
+@media (max-width: 920px) {
+    nav ul {
+        display: flex;
+        gap: .6rem;
+    }
+
+    #menu a {
+        font-size: .7rem;
+    }
+
+    header nav h2 {
+        font-size: .8rem;
+    }
+
+     .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+
+     .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 350px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 340px;
+        padding: .3rem;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        line-height: 18px;
+        font-size: .7rem;
+        text-align: justify;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a,  .musbck a, .chrbck a, .iccbck a {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 902px) {
+    .dss h2 {
+        font-size: .7rem;
+    }
+
+    .dss .snt {
+        font-size: .8rem;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        padding: .3rem;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        line-height: 18px;
+        text-align: justify;
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 849px) {
+    nav ul {
+        display: flex;
+        gap: .7rem;
+    }
+
+    #menu a {
+        font-size: .7rem;
+    }
+
+    .snt {
+        font-size: .6rem;
+    }
+
+   .dss h2 {
+        font-size: .7rem;
+        letter-spacing: 1px;
+    }
+
+    .pics {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+   .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+
+     .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 380px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 370px;
+        padding: .3rem;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        line-height: 18px;
+        font-size: .7rem;
+        text-align: justify;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a,  .musbck a, .chrbck a, .iccbck a {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 795px) {
+    header nav ul {
+        display: flex;
+        gap: .8rem;
+    }
+
+    .dss h2 {
+        font-size: .7rem;
+    }
+
+    #menu li a {
+        font-size: .7rem;
+    }
+
+    .pics {
+        display: flex;
+        gap: 2.3rem;
+    }
+
+    footer {
+        height: 35rem;
+    }
+    .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+
+     .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 350px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 340px;
+        padding: .3rem;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .5rem;
+        line-height: 18px;
+        font-size: .7rem;
+        text-align: justify;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a,  .musbck a, .chrbck a, .iccbck a {
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width: 776px) {
+    header nav h2 {
+        font-size: .7rem;
+    }
+
+     .pics {
+        display: flex;
+        gap: 2rem;
+    }
+
+     .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 350px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 340px;
+        padding: .3rem;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        font-size: .7rem;
+        text-align: justify;
+        line-height: 15px;
+    }
+
+    .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+}
+
+@media (max-width: 764px) {
+    #menu li a {
+        font-size: .6rem;
+    }
+
+    header div {
+        width: 18%;
+        margin-left: 4.5rem;
+        height: 5px;
+    }
+
+    .dss h2 {
+        font-size: .6rem;
+        margin-left: 3rem;
+    }
+
+    .dss .snt {
+        font-size: .6rem;
+        margin-left: 4rem;
+    }
+
+     .pics {
+        display: flex;
+        gap: 2rem;
+    }
+
+     .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 380px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 370px;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        font-size: .7rem;
+        text-align: justify;
+    }
+
+    .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+}
+
+@media (max-width: 736px) {
+    header nav h2 {
+        font-size: .6rem;
+    }
+
+     .pics {
+        display: flex;
+        gap: 2rem;
+    }
+
+    #menu li a {
+        font-size: .6rem;
+    }
+
+    .wde {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .few, .more, .all {
+        width: 32vw;
+        height: 380px;
+    }
+
+    .musfrnt , .chrfrnt, .iccfrnt {
+        width: 32vw;
+    }
+
+    .musbck , .chrbck, .iccbck {
+        width: 32vw;
+        height: 370px;
+    }
+
+    .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        padding: .3rem;
+        font-size: .7rem;
+        text-align: justify;
+        line-height: 17px;
+    }
+    
+}
+
+@media (max-width: 697px) {
+    .dss h2 {
+        font-size: .5rem;
+    }
+
+     .pics {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .wde {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .few, .more, .all {
+        width: 70vw;
+        height: 450px;
+
+    }
+
+    .musfrnt, .chrfrnt, .iccfrnt {
+        width: 70vw;
+    }
+
+    .musbck, .chrbck, .iccbck {
+        width: 70vw;
+        height: 450px;
+    }
+
+     .musfrnt a, .chrfrnt a, .iccfrnt a, .musbck a, .chrbck a, .iccbck a {
+        font-size: 1rem;
+     }
+
+    .musfrnt p, .chrfrnt p, .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        font-size: .9rem;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 689px) {
+
+    header nav h2 {
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: .6rem;
+    }
+
+     .pics {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .clearfix {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clearfix p {
+        font-size: .9rem;
+        font-weight: 500;
+        padding-top: 1rem;
+    }
+
+     .clearfix h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pin {
+        margin-right: 9.5rem;
+    }
+
+    .php {
+        padding-top: 1rem;
+    }
+
+    .center {
+        font-size: 2rem;
+    }
+
+    .wde {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all, .few, .more {
+        width: 47vw;
+        height: 350px;
+    }
+
+      .musfrnt, .chrfrnt,  .iccfrnt, .musbck, .chrbck, .iccbck {
+        width: 47vw;
+      }
+
+      .musbck, .chrbck, .iccbck {
+        height: 360px;
+      }
+
+      .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2rem;
+     }
+
+      .musfrnt p, .chrfrnt p, .iccfrnt p,  .musbck p, .chrbck p, .iccbck p {
+        font-size: .8rem;
+        line-height: 19px;
+        padding: 6px;
+        text-align: justify;
+      }
+
+      .pin {
+        margin-right: 9.8rem;
+      }
+}
+
+@media (max-width: 677px) {
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    .stc {
+        width: 100%;
+    }
+
+    .dss h2 {
+        font-size: 1.3rem;
+        display: flex;
+        margin-left: 7rem;
+    }
+
+    header div {
+        width: 40%;
+        margin-left: 10rem;
+    }
+
+    .dss .snt {
+        font-size: 1.2rem;
+        margin-left: 11rem;
+    }
+
+    .active_nav {
+        height: 73px;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        height: 80vh;
+        width: 100%;
+        padding: .6rem;
+        background-image: url('./images/Nav\ image.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    #menu li a {
+        color: #fff;
+        font-size: .9rem;
+    }
+
+    #openIcon {
+        display: block;
+        margin-right: 3rem;
+    }
+
+    #closeIcon {
+        display: none;
+        margin-right: 3rem;
+    }
+
+    #menu li {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #cdcbcb;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    }
+
+    .out, .in {
+        border-radius: 5px;
+        border: none;
+        box-shadow: 2px 2px 10px 5px #000000d7;
+    }
+
+    figcaption {
+        font-size: .6rem;
+        font-weight: bold;
+        padding-top: .5rem;
+    }
+
+    .pics {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .more, .few, .all {
+        width: 85vw;
+        height: 500px;
+    }
+
+    .pet p {
+        font-size: .7rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .musfrnt, .chrfrnt,  .iccfrnt, .musbck, .chrbck, .iccbck {
+        width: 85vw;
+    }
+
+     .musbck, .chrbck, .iccbck {
+        height: 530px;
+     }
+
+    .musfrnt h2, .chrfrnt h2,  .iccfrnt h2, .musbc h2, .chrbck h2, .iccbck h2 {
+        font-size: 1.3rem;
+    }
+
+    .musfrnt a, .chrfrnt a,  .iccfrnt a, .musbck a, .chrbck a, .iccbck a {
+        font-size: 1.3rem;
+    }
+
+     .musfrnt p, .chrfrnt p,  .iccfrnt p, .musbck p, .chrbck p, .iccbck p{
+         font-size: 1.2rem;
+         line-height: 40px;
+     }
+
+     .musfrnt i, .chrfrnt i,  .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2.5rem;
+     }
+}
+
+
+
+@media (max-width: 600px) {
+    .pics {
+        width: 100%;
+        display: flex;
+        gap: 1.7rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .outer,.inner {
+        width: 45%;
+    }
+
+    figcaption {
+        font-size: 1rem;
+    }
+
+    .stc {
+        width: 100%;
+    }
+
+    .all, .few, .more {
+        width: 80vw;
+        height: 580px;
+    }
+
+    .musfrnt, .chrfrnt, .iccfrnt, .musbck, .chrbck, .iccbck {
+        width: 80vw;
+    }
+
+    .musbck, .chrbck, .iccbck {
+        height: 580px;
+    }
+    
+
+    .musfrnt p, .chrfrnt p, .iccfrnt p, .musbck p, .chrbck p, .iccbck p{
+        font-size: 1.1rem;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a, .musbck a, .chrbck a, .iccbck a {
+        font-size: 1.2rem;
+    }
+
+    .musfrnt i, .chrfrnt i, .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        font-size: 2.5rem;
+    }
+
+    .musfrnt h2, .chrfrnt h2, .iccfrnt h2, .musbck h2, .chrbck h2, .iccbck h2 {
+        font-size: 1.2rem;
+    }
+
+    .pin {
+        margin-right: 8rem;
+    }
+
+    .clearfix p {
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+
+
+}
+
+    
+
+ @media (max-width: 576px) {
+
+    body {
+       max-width: 100%;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 888;
+    }
+
+    .dss h2 {
+        margin-left: 5rem;
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+
+     header div {
+        margin-top: .3rem;
+        margin-left: 10rem;
+        width: 45%;
+    } 
+
+    .dss .snt {
+        margin-left: 10rem;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        letter-spacing: 3px;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    #openIcon {
+        display: block;
+        margin-right: 2rem;
+    }
+
+    #closeIcon {
+    display: none;
+    } 
+
+    #menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    flex-direction: column;
+    height: 100vh;
+    padding: .6rem;
+    background-image: url('./images/Nav\ image.jpeg');
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+#menu li a {
+    color: #fff;
+    font-size: 1rem;
+}
+
+#menu li {
+    padding: 1.5rem;
+    border-bottom: 2px solid #cdcbcb;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: block;
+}
+
+
+    .pics {
+        width: 100%;
+        display: flex;
+        gap: 1.7rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .outer, .inner{
+        width: 43%;
+    }
+
+    .out, .in {
+        border-radius: 5px;
+        border: none;
+        box-shadow: 2px 2px 10px 5px #000000d7;
+    }
+    
+    figcaption {
+        font-size: .8rem;
+        font-weight: bold;
+        padding-top: .5rem;
+    }
+
+    .active_nav {
+        position: fixed;
+        height: 75px;
+    }
+
+    .stc {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .wde {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    gap: .5rem;
+    padding: 0px;
+    }
+
+    .all, .few, .more {
+        width: 80vw;
+        height: 530px;
+        border-top:  5px solid #045ef0bb;
+        border-bottom:  5px solid #045ef0bb;
+    }
+
+    .musfrnt, .chrfrnt, .iccfrnt, .musbck, .chrbck, .iccbck {
+        width: 80vw;
+        padding: 2rem;
+    } 
+
+    .musfrnt p, .chrfrnt p, .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        font-size: 1rem;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    .musfrnt i, .chrfrnt i, .iccfrnt i, .musbck i, .chrbck i, .iccbck i {
+        padding-top: .5rem;
+        font-size: 2rem;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a, .musbck a, .chrbck a, .iccbck a {
+        font-size: 1rem;
+    }
+
+
+ .clearfix h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+ }
+
+ .clearfix p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+ }
+
+ .php {
+    padding-bottom: 1rem;
+ }
+
+ .pin {
+    width: 80%;
+    border-radius: 10px;
+    margin-right: 8rem;
+ }
+
+ footer {
+    height: 62rem;
+ }
+
+ .wisd p {
+    width: 100%;
+    font-size: .9rem;
+    padding: .2rem;
+ }
+
+ .kit {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 15px;
+ }
+
+ .kit h6 {
+    font-size: 1.2rem;
+ }
+
+ .kit h6 a {
+    font-size: .9rem;
+    letter-spacing: 1px;
+    color: #dfd9d9da;
+ }
+
+
+ .luk {
+    height: 38px;
+    width: 38px;
+ }
+
+ .fa-brands {
+    font-size: 1.3rem;
+ }
+
+ .pet p {
+    width: 80%;
+    font-size: .9rem;
+    text-align: center;
+ }
+ 
+
+ .key a {
+    font-size: 1.1rem;
+ }
+
+ }
+
+ @media (max-width: 500px) {
+    header div {
+        margin-left: 5.5rem;
+    }
+
+    .dss h2 {
+        font-size: 1.1rem;
+        margin-left: 3rem;
+    }
+
+    .dss .snt {
+        margin-left: 5.5rem;
+    }
+
+    #openIcon, #closeIcon {
+        margin-right: 5rem;
+    }
+
+     .musfrnt p, .chrfrnt p, .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        text-align: justify;
+        line-height: 25px;
+     }
+
+     .pin {
+        margin-right: 6.5rem;
+     }
+ }
+
+ @media (max-width: 430px) {
+   
+    header div {
+        width: 40%;
+        margin-left: 7.5rem;
+    }
+
+   .dss h2 {
+        font-size: .8rem;
+        font-weight: bolder;
+        margin-left: 5rem;
+        letter-spacing: 2px;
+    }
+
+    .dss .snt {
+        white-space: nowrap;
+        font-size: .8rem;
+        margin-left: 7rem;
+        font-weight: bolder;
+    }
+
+    #openIcon, #closeIcon {
+        font-size: 1.5rem;
+        margin-right: 2.5rem;
+    }
+
+    figcaption {
+        font-size: .9rem;
+    }
+
+    #menu li a {
+        font-size: .9rem;
+    }
+
+    #menu li {
+        padding: 1rem;
+    }
+
+    .all, .few, .more {
+        width: 350px;
+        height: 400px;
+    }
+
+    .musfrnt, .chrfrnt, .iccfrnt {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .musbck, .chrbck, .iccbck {
+        width: 100%;
+        padding: 0px;
+        height: 420px;
+    }
+
+    .musfrnt p, .chrfrnt p, .iccfrnt p, .musbck p, .chrbck p, .iccbck p {
+        font-size: .8rem;
+        line-height: 25px;
+    }
+
+    .musfrnt h2, .chrfrnt h2, .iccfrnt h2, .musbck h2, .chrbck h2, .iccbck h2 {
+        font-size: 1rem;
+    }
+
+    .musfrnt a, .chrfrnt a, .iccfrnt a, .musbck a, .chrbck a, .iccbck a {
+        font-size: .9rem;
+     }
+
+     .clr {
+        padding: 1rem;
+     }
+
+     .clearfix h2 {
+        font-size: 1.3rem;
+     }
+
+     .pin {
+        margin-right: 6.5rem;
+     }
+
+     .clearfix p {
+        text-align: justify;
+        font-size: 1rem;
+     }
+
+     .clearfix p::first-letter {
+        font-size: 1.5rem;
+     }
+
+     footer {
+        height: 58rem;
+     }
+
+    .wisd p {
+        padding: 0px;
+    }
+
+    .kit h6 {
+        font-size: .9rem;
+    }
+
+    .kit h6 a {
+        font-size: .7rem;
+    }
+
+    .pet p {
+        font-size: .7rem;
+        width: 90%;
+    }
+
+    .key a {
+        font-size: .6rem;
+    }
+ }
+
+ @media (max-width: 400px) {
+    header div {
+        margin-left: 6rem;
+    }
+    .dss h2 {
+        margin-left: 3rem;
+    }
+
+    .dss .snt {
+        display: flex;
+        justify-content: center;
+        margin-left: 3rem;
+    }
+
+    #openIcon, #closeIcon {
+        margin-right: 4rem;
+        font-size: 1.5rem;
+    }
+
+    figcaption {
+        font-size: .7rem;
+    }
+
+    .pin {
+        margin-right: 6.5rem;
+    }
+ }
+
+ @media (max-width: 340px) {
+     #openIcon, #closeIcon {
+        margin-right: 10rem;
+     }
+
+     .stc {
+        margin: .3rem;
+     }
+
+     .center {
+        white-space: nowrap;
+        font-size: 1.7rem;
+     }
+
+ }
+
+
+
+ 
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
